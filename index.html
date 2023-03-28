@@ -14,23 +14,32 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to MY DOM</h1>
+        <section>
+            <h1>Welcome to MY DOM</h1>
+        <ul>
+            <li>waterlily</li>
+            <li>rose</li>
+            <li>merigold</li>
+        </ul>
+        </section>
     </header>
     <main>
-        <h1>MY awesome DOM </h1>
+        <section>
+            <h1>MY awesome DOM </h1>
         <ul id="fruits">
             <li>Apple</li>
             <li>Banana</li>
         </ul>
+        </section>
     </main>
     <script src="dom.js"></script>
     <script>
-        console.log('adding js inside the html file');
+        // console.log('adding js inside the html file');
        
         const fruitsName = document.querySelectorAll('#fruits li');
         console.log(fruitsName);
         for(li of fruitsName){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
 </body>
