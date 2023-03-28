@@ -18,14 +18,20 @@
     </header>
     <main>
         <h1>MY awesome DOM </h1>
-        <ul>
-            <li></li>
-            <li></li>
+        <ul id="fruits">
+            <li>Apple</li>
+            <li>Banana</li>
         </ul>
     </main>
     <script src="dom.js"></script>
     <script>
         console.log('adding js inside the html file');
+       
+        const fruitsName = document.querySelectorAll('#fruits li');
+        console.log(fruitsName);
+        for(li of fruitsName){
+            console.log(li.innerText);
+        }
     </script>
 </body>
 </html>
